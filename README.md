@@ -33,22 +33,22 @@
 git clone https://github.com/SpurtiBhat/CCLambda----Serverless-Function-Execution-Platform.git
 cd CCLambda----Serverless-Function-Execution-Platform
 
-2. Set Up a Virtual Environment
+### 2. Set Up a Virtual Environment
 python3 -m venv venv
 source venv/bin/activate
 
-4. Install Dependencies
+### 3. Install Dependencies
 pip install -r requirements.txt
 ⚠️ Make sure Python 3.8+ is installed
 Check your version with:
 python3 --version
-⚙️ Run the Backend (FastAPI)
+### 4. Run the Backend (FastAPI)
 uvicorn main:app --reload
 API available at: http://localhost:8000
 
 API docs: http://localhost:8000/docs
 
-🌐 Run the Frontend (Streamlit)
+### 5. 🌐 Run the Frontend (Streamlit)
 streamlit run frontend.py
 UI available at: http://localhost:8501
 
@@ -60,7 +60,8 @@ def handler(event):
     b = event.get("b", 1)
     return {"result": a * b}
 📊 Monitor Dashboard
-Navigate to the Monitor tab to view:
+
+### 6. Navigate to the Monitor tab to view:
 
 ✅ Total deployed functions
 
