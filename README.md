@@ -1,31 +1,35 @@
-### ⚡ CCLambda – Serverless Function Execution Platform
+# ⚡ CCLambda – Serverless Function Execution Platform
 
-CCLambda is a lightweight, custom-built serverless platform inspired by AWS Lambda. It allows users to upload, deploy, execute, and monitor small code functions in Python and JavaScript using simulated runtimes like Docker and gVisor.
+**CCLambda** is a lightweight, custom-built serverless platform inspired by **AWS Lambda**. It allows users to upload, deploy, execute, and monitor small code functions in **Python** and **JavaScript**, using simulated runtimes like **Docker** and **gVisor**.
 
-### 🚀 Features
-🔐 JWT-based user authentication
+---
 
-📁 Upload code files (Python/JS) for deployment
+## 🚀 Features
 
-✏️ Paste and execute code snippets directly
+- 🔐 **JWT-based user authentication**
+- 📁 **Upload code files** (Python/JS) for deployment
+- ✏️ **Paste and execute code snippets directly**
+- ⚡ **Simulated function execution** using Docker/gVisor
+- 📊 **Real-time dashboard** for monitoring executions
+- 🌐 **Frontend** built with Streamlit
+- ⚙️ **Backend** built with FastAPI
 
-⚡ Simulated function execution (Docker/gVisor)
+---
 
-📊 Real-time dashboard for monitoring execution
+## 🛠️ Tech Stack
 
-🌐 Frontend built with Streamlit
+| Component | Technology                      |
+|-----------|----------------------------------|
+| **Frontend** | Streamlit                    |
+| **Backend**  | FastAPI                      |
+| **Runtimes** | Docker, gVisor (simulated)   |
+| **Auth**     | OAuth2 with JWT Tokens       |
+| **Charts**   | Plotly, Pandas               |
 
-⚙️ Backend API built with FastAPI
+---
+## 📦 Setup Instructions (macOS/Linux)
 
-🛠️ Tech Stack
-Frontend :	Streamlit
-Backend	:FastAPI
-Runtimes :	Docker, gVisor (simulated)
-Auth :	OAuth2 with JWT Tokens
-Charts :	Plotly, Pandas
-
-📦 Setup Instructions (macOS/Linux)
-1. Clone the Repository
+### 1. Clone the Repository
 git clone https://github.com/SpurtiBhat/CCLambda----Serverless-Function-Execution-Platform.git
 cd CCLambda----Serverless-Function-Execution-Platform
 
@@ -33,41 +37,34 @@ cd CCLambda----Serverless-Function-Execution-Platform
 python3 -m venv venv
 source venv/bin/activate
 
-3. Install Dependencies
+4. Install Dependencies
 pip install -r requirements.txt
-⚠️ Make sure Python 3.8 or higher is installed:
-Check with python3 --version
-
+⚠️ Make sure Python 3.8+ is installed
+Check your version with:
+python3 --version
 ⚙️ Run the Backend (FastAPI)
 uvicorn main:app --reload
-The backend will be available at:
-👉 http://localhost:8000
+API available at: http://localhost:8000
 
-API docs:
-📘 http://localhost:8000/docs
+API docs: http://localhost:8000/docs
 
 🌐 Run the Frontend (Streamlit)
-bash
-Copy
-Edit
 streamlit run frontend.py
-The frontend UI will launch at:
-👉 http://localhost:8501
+UI available at: http://localhost:8501
 
-Use the sidebar for login and to deploy/run functions.
+Use the sidebar to log in, deploy, and run functions.
 
 🧪 Example Python Function
-
 def handler(event):
     a = event.get("a", 1)
     b = event.get("b", 1)
     return {"result": a * b}
-    
 📊 Monitor Dashboard
-Navigate to the "Monitor" tab to view:
+Navigate to the Monitor tab to view:
 
-Total deployed functions
+✅ Total deployed functions
 
-Most used languages
+🌍 Most used languages
 
-Bar graph of execution times per function
+📈 Bar graph of execution times per function
+
