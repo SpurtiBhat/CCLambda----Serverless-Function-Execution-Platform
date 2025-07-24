@@ -1,7 +1,8 @@
-⚡ CCLambda – Serverless Function Execution Platform
+### ⚡ CCLambda – Serverless Function Execution Platform
+
 CCLambda is a lightweight, custom-built serverless platform inspired by AWS Lambda. It allows users to upload, deploy, execute, and monitor small code functions in Python and JavaScript using simulated runtimes like Docker and gVisor.
 
-🚀 Features
+### 🚀 Features
 🔐 JWT-based user authentication
 
 📁 Upload code files (Python/JS) for deployment
